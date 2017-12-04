@@ -1,0 +1,14 @@
+#pragma once
+#include "Gameobjects.h"
+
+class Comet : public GameObject {
+private:
+
+public:
+	Comet(float x, float y, ALLEGRO_BITMAP *image); //constructor
+	void Destroy();
+	void Update();
+	void Render();
+
+	void Collided(int objectID);
+};
