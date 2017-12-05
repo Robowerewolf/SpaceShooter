@@ -1,0 +1,15 @@
+#pragma once
+
+#include "Gameobjects.h"
+
+class Explosion : public GameObject
+{
+private:
+
+public:
+	Explosion(float x, float y, ALLEGRO_BITMAP *image);
+	void Destroy();
+
+	void Update();
+	void Render();
+};
